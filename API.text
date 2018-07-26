@@ -1,0 +1,53 @@
+//Pizza data
+
+
+ // A Pizza
+ 
+ {
+     'id': id,
+     'owner': 'owner',
+     'size': size,
+     'name': name,
+     'extras': extras
+ }
+
+ {
+     'id': 1,
+     'owner': 'Richard',
+     'size': 'familiar',
+     'name': 'Cheese Pizza',
+     'extras': 'cheese'
+ }
+
+ Spec
+ {
+     'GET /Pizza' :{
+         'desc': 'return all pizzas',
+         'response': '200 application/json',
+         'data' : [{}, {}, {}]
+     },
+
+     'GET /Pizza' : {
+         'desc': 'return one pizza represented by id',
+         'response': '200 application/json',
+         'data': {}
+     },
+
+     'POST /pizza' : {
+         'desc': 'create and return a new pizza using the posted object as a pizza',
+         'response': '200 application/json',
+         'data': {}
+     },
+
+     'PUT /pizza/:id' : {
+         'desc': 'updates and returns the matching pizza with the posted update',
+         'response': '200 application/json',
+         'data': {}
+     },
+
+     'DELETE /pizza/:id' : {
+         'desc': 'delete and return the matching pizza',
+         'response': '200 application/json',
+         'data': {}
+     }
+ }
